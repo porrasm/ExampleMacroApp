@@ -15,7 +15,8 @@ namespace MacroExamples {
         private Point startPoint;
 
         protected override void InitializeActivators(ref ActivatorContainer acts) {
-            // General bind key setup as CapsLock
+
+            // take screenshot with ctrl + s
             Bind screenDownBind = new Bind(KKey.LCtrl, KKey.S) { Settings = BindSettings.OnPress };
             Bind screenUpBind = new Bind(KKey.LCtrl, KKey.S) { Settings = BindSettings.Default };
 
