@@ -79,7 +79,7 @@ namespace MacroExamples {
             }
         }
 
-        [BindActivator(KKey.LCtrl, KKey.Up)]
+        [BindActivator(KKey.GeneralBindKey, KKey.Up)]
         private void DockWindowUp() {
             if (WindowTools.GetValidWindow(out Window win)) {
                 Console.WriteLine("DOcking window up");
@@ -88,7 +88,7 @@ namespace MacroExamples {
             }
         }
 
-        [BindActivator(KKey.LCtrl, KKey.Down)]
+        [BindActivator(KKey.GeneralBindKey, KKey.Down)]
         private void DockWindowDown() {
             if (WindowTools.GetValidWindow(out Window win)) {
                 Console.WriteLine("DOcking window down");
@@ -97,7 +97,7 @@ namespace MacroExamples {
             }
         }
 
-        [BindActivator(KKey.LCtrl, KKey.Right)]
+        [BindActivator(KKey.GeneralBindKey, KKey.Right)]
         private void DockWindowRight() {
             if (WindowTools.GetValidWindow(out Window win)) {
                 Console.WriteLine("DOcking window up");
@@ -106,7 +106,7 @@ namespace MacroExamples {
             }
         }
 
-        [BindActivator(KKey.LCtrl, KKey.Left)]
+        [BindActivator(KKey.GeneralBindKey, KKey.Left)]
         private void DockWindowLeft() {
             if (WindowTools.GetValidWindow(out Window win)) {
                 Console.WriteLine("DOcking window down");

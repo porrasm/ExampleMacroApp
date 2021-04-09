@@ -19,8 +19,8 @@ namespace MacroExamples {
 
             setup.CommandAssembly = Assembly.GetExecutingAssembly();
 
-            // configure these
-            setup.Settings.GeneralBindKey = KKey.None;
+            // configure these, now LCtrl is blocked since its reserved for the GeneralBindKey. I recommend CapsLock, no one needs that key anyway.
+            setup.Settings.GeneralBindKey = KKey.LCtrl;
             setup.Settings.CommandKey = KKey.None;
 
             setup.Settings.MainLoopTimestep = 15;

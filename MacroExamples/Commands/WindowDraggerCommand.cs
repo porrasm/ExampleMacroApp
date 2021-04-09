@@ -34,7 +34,7 @@ namespace MacroExamples {
         #endregion
 
         protected override void InitializeActivators(ref ActivatorContainer acts) {
-            acts.AddActivator(new BindHoldActivator(new Bind(BindSettings.OnPress, KKey.LCtrl, KKey.MouseLeft), OnDragStart, OnDragUpdate, OnDragEnd));
+            acts.AddActivator(new BindHoldActivator(new Bind(BindSettings.OnPress, KKey.GeneralBindKey, KKey.MouseLeft), OnDragStart, OnDragUpdate, OnDragEnd));
         }
 
         #region drag

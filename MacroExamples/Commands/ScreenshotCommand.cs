@@ -17,8 +17,8 @@ namespace MacroExamples {
         protected override void InitializeActivators(ref ActivatorContainer acts) {
 
             // take screenshot with ctrl + s
-            Bind screenDownBind = new Bind(KKey.LCtrl, KKey.S) { Settings = BindSettings.OnPress };
-            Bind screenUpBind = new Bind(KKey.LCtrl, KKey.S) { Settings = BindSettings.Default };
+            Bind screenDownBind = new Bind(KKey.GeneralBindKey, KKey.S) { Settings = BindSettings.OnPress };
+            Bind screenUpBind = new Bind(KKey.GeneralBindKey, KKey.S) { Settings = BindSettings.Default };
 
             new BindActivator(screenDownBind, StartScreenShot);
             new BindActivator(screenUpBind, EndScreenShot);
@@ -55,7 +55,7 @@ namespace MacroExamples {
         /// <summary>
         /// Saves the captured image in the downloads folder
         /// </summary>
-        [BindActivator(KKey.LCtrl, KKey.S, KKey.D)]
+        [BindActivator(KKey.GeneralBindKey, KKey.S, KKey.D)]
         private void SaveClipboard() {
             SaveClipboardImage("clipboard_" + MacroFramework.Tools.Timer.Milliseconds);
         }

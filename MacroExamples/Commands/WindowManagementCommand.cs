@@ -17,8 +17,8 @@ namespace MacroExamples {
 
         protected override void InitializeActivators(ref ActivatorContainer acts) {
 
-            BindActivator ctrlClick = new BindActivator(new Bind(KKey.LCtrl, KKey.MouseLeft));
-            BindActivator ctrlRightClick = new BindActivator(new Bind(KKey.LCtrl, KKey.MouseRight));
+            BindActivator ctrlClick = new BindActivator(new Bind(KKey.GeneralBindKey, KKey.MouseLeft));
+            BindActivator ctrlRightClick = new BindActivator(new Bind(KKey.GeneralBindKey, KKey.MouseRight));
 
             // Maximize window on Ctrl + double click
             new RepeatActivator(ctrlClick, MaximizeWindow) { RepeatCount = 2, OnEachActivate = SetCurrentWindow }.AssignTo(acts);
